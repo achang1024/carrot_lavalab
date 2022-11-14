@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Carrot",
+    "description": "Rabbit hole visualization",
+    "version": "1.0",
+    
+    
+    "page_action": {
+      "default_icon": {
+        "16": "/images/carrot.png",
+        "48":  "/images/carrot.png",
+        "128":  "/images/carrot.png"
+
+      }
+    },
+
+    "icons": {
+        "16": "/images/carrot.png",
+        "48": "/images/carrot.png",
+        "128": "/images/carrot.png"
+    }
+  }
