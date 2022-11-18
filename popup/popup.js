@@ -25,10 +25,16 @@ element.querySelector("a").addEventListener("click", async () => {
 
 elements.add(element);
 }
+
 document.querySelector("ul").append(...elements);
 
 document.getElementById("save_links").addEventListener("click", async () => {
     // need to focus window as well as the active tab
-    await chrome.tabs.update(tab.id, { active: true });
-    await chrome.windows.update(tab.windowId, { focused: true });
+    var store = [];
+    for (const tab of tabs) {
+        store.push(tab.title);
+        console.log(tab.title);
+    }   
+    
+
 });
